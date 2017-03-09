@@ -1,0 +1,109 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+img{max-width:100%;}
+div{}
+.yinhui{background:#e0e0e0}
+.bai{background:##F0F8FF}
+@media screen and (min-width:1201px){
+    .my-font{
+        font-size:8em;
+        position:absolute;
+        top:60%;
+        left:40%;
+    }
+}
+@media screen and (max-width:1200px){
+    .my-font{
+        font-size:6em;
+        position:absolute;
+        top:60%;
+        left:40%;
+    }
+}
+@media screen and (max-width:911px){
+    .my-font{
+        font-size:4em;
+        position:absolute;
+        top:60%;
+        left:40%;
+    }
+}
+@media screen and (max-width:768px){
+    .my-font{
+        font-size:2em;
+        position:absolute;
+        top:60%;
+        left:40%;
+    }
+}
+#sina{
+    position:absolute;
+    left:45%;
+    top:82%;
+}
+#qq{
+    position:absolute;
+    left:55%;
+    top:82%;
+}
+.hover{top:0;transition:top 777ms;}
+.hover:hover{
+    position:relative;
+    top:10px;
+}
+    @keyframes qq {
+        0%{
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100%{
+            -webkit-transform:rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+.qq:hover{
+    cursor:pointer;
+    -webkit-animation:qq 1s;
+    -o-animation:qq 1s;
+    animation:qq 1s;
+}
+@keyframes skill {
+    0%{
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+    25%{
+        -webkit-transform: translateX(10px);
+        -moz-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        -o-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    75%{
+        -webkit-transform: translateX(-10px);
+        -moz-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        -o-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    100%{
+        -webkit-transform:translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+.skill:hover{
+    -webkit-animation:skill 1500ms;
+    -o-animation:skill 1500ms;
+    animation:skill 1500ms;
+}
